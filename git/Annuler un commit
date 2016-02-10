@@ -1,0 +1,3 @@
+Identifier le commit sur lequel rembobiner (à l'aide de git log par exemple)
+
+git reset [identifiant du commit]
