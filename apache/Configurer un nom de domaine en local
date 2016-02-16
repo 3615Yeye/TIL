@@ -1,0 +1,20 @@
+# Faire pointer le nom de domaine sur la machine locale
+vim /etc/hosts
+    127.0.0.1       nomdedomaine.tld
+
+# Configurer apache pour envoyer les requêtes vers le nom de domaine choisit
+sudo vim /etc/apache2/sites-available/nomdedomaine.tld.conf
+    <VirtualHost *:80>
+        ServerName nomdedomaine.tld
+        DocumentRoot /var/www/html/monsite
+
+        <Directory /var/www/html/monsite>
+            Options Indexes FollowSymLinks Includes
+            AllowOverride All
+            Order allow,deny
+            Allow from all
+        </Directory>
+    </VirtualHost>
+
+sudo a2ensite nomdedomaine.tld.conf
+sudo service apache2 reload
