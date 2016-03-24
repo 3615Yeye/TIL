@@ -1,0 +1,5 @@
+# Using ab (ApacheBench) CLI tool
+CLI example : ab -n 1000 -c 50 [URL]
+-n : number of requests
+-c : number of concurrent requests
+-P : proxy credential, username:password
