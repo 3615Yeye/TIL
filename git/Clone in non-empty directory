@@ -1,0 +1,5 @@
+# Clone a git repository in a non-empty directory (useful for dotfiles)
+git init
+git remote add origin PATH/TO/REPO
+git fetch
+git checkout -t origin/master
