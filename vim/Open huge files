@@ -1,4 +1,0 @@
-# Open huge files quickly with vim (tested on a 1.5Go file)
-open vim only
-type :set binary
-type :open filename
