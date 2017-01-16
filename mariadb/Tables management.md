@@ -9,3 +9,6 @@ SHOW TABLES;
 
 # Show SQL creation statement for a given table (useful infos in there : types, options, default value, charset, database engine...)
 SHOW CREATE TABLE tablename;
+
+# Dump table
+mysqldump -u user -p dbname tablename > tablenameDump_Date.sql
