@@ -81,12 +81,8 @@ Create and add to the typoscript/mapping/page.ts file :
 
 
 Create and add to the templates/v1/index.html file :
-<html>
-    <body>
-        <h1>{data.title}</h1>
-        {main->f:format.raw()}
-    </body>
-</html>
+    <h1>{data.title}</h1>
+    {main->f:format.raw()}
 
 Tadaa !
 Typo3 is now generating HTML from the content of the pages defined in the backend.
